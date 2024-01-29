@@ -15,7 +15,7 @@ const ruleForm = reactive<RuleForm>({
 
 const rules = reactive<FormRules<RuleForm>>({
   name: [
-    { required: true, message: 'Please input Activity name', trigger: 'blur' },
+    { required: true, message: 'Please input name of movie', trigger: 'blur' },
     { min: 1, max: 100, message: 'Length should be 1 to 100', trigger: 'blur' }
   ]
 })

@@ -21,11 +21,11 @@ class ExampleClient {
     return response.data as T
   }
 
-  async post<T>(url: string, body: unknown, params: {}) {
+  async post<TRequest, TResponse>(url: string, body: TRequest, params: {}) {
     const response = await this.axiosClient.post(url, body, {
       params
     })
-    return response.data as T
+    return response.data as TResponse
   }
 }
 
