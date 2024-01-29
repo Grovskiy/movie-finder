@@ -1,6 +1,10 @@
 
 ## Project setup
 
+
+The application uses the API https://www.omdbapi.com, for correct operation, create an `.env` based on `.env.example`
+and get an apikey on the page https://www.omdbapi.com/apikey.aspx
+
 ```bash
 npm install
 ```
@@ -16,4 +20,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
